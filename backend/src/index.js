@@ -24,6 +24,7 @@ mongoose.connect(process.env.MongoDb, {
 .then(() => console.log("connected"))
 .catch(e => console.error(e.message));
 
+app.disable('x-powered-by');
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
