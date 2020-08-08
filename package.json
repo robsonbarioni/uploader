@@ -1,0 +1,15 @@
+{
+    "private": true,
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "scripts": {
+        "backend": "cd ./backend && yarn start",
+        "frontend": "cd ./frontend && yarn start",
+        "start": "run-p backend frontend"
+    },
+    "devDependencies": {
+        "yarn-run-all": "^3.1.1"
+    }
+}
